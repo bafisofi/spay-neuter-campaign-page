@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <title>Free spay/neuter campaign!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="intro">
+      <h1>Free <strong>spay/neuter campaign</strong> for dogs and cats</h1>
+      <span class="beta-text"
+        >Free rewards will be offered such as collars, canned food, dry
+        food...</span
+      >
+      <p class="top-text">Organized by Mobile Veterinary Unit</p>
+    </section>
+
+    <main class="main-content">
+      <h2>Book Now!</h2>
+      <p>
+        Get your pet dog or cat sterilized for free. We also provide
+        sterilization services for stray dogs and cats. If you're unable to
+        capture a stray animal, we'll be there to help you.!
+      </p>
+
+      <form>
+        <input type="text" required placeholder="Name" aria-label="Name" />
+        <input
+          type="number"
+          required
+          placeholder="Phone number"
+          aria-label="Phone Number"
+        />
+        <input type="email" required placeholder="Email" aria-label="Email" />
+
+        <div class="quantity-wrapper">
+          <div>
+            <div>
+              <input type="checkbox" name="cat" checked />
+              <label for="cat">Cat</label>
+            </div>
+            <input
+              type="number"
+              placeholder="Total"
+              aria-label="Quantity-cat"
+              max="5"
+              min="0"
+            />
+          </div>
+          <div>
+            <div>
+              <input type="checkbox" name="dog" />
+              <label for="dog">Dog</label>
+            </div>
+            <input
+              type="number"
+              placeholder="Total"
+              aria-label="Quantity-dog"
+              max="5"
+              min="0"
+            />
+          </div>
+        </div>
+
+        <textarea placeholder="Anything you would like to add"></textarea>
+        <button class="btn btn-primary">Submit</button>
+      </form>
+      <p class="fine-print">Together for animal welfare. Every life matters</p>
+    </main>
+  </body>
+</html>
